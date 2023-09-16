@@ -1,0 +1,71 @@
+/* styles css + media */
+
+/* COMMON CSS (header,contents-wrap,footer,font,color) */
+/* HEADER */
+.header { background-color: #fff; padding:30px; position: sticky; top:0; z-index:100;}
+.header .nav {width: 100%; display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin:0 auto;}
+.header .nav .nav-list {display: flex; align-items: center;}
+.header .logo {line-height: 1;margin:0;}
+
+.header .menus {display: flex; gap:30px; align-items: center;}
+.header .nav .nav-list.menu {justify-content: flex-end; gap:10px;}
+
+.header .drawer-menu{display: flex; gap:30px; align-items: center;}
+.common-icons {display: flex; justify-content: center; align-items: center; width: 30px; height: 30px;}
+.naver-blog img {width:85%; height: 85%;}
+
+
+
+
+
+.contents-wrap {background: gray; min-height: 600px; display: flex; flex-direction: column; align-items: center; background-color: red;}
+.guide-wrap {width: 100%; max-width: 1200px; padding:20px 30px; background-color: yellow; height: 10000px;}
+.section {margin-bottom:80px; border:1px solid red;}
+.section-title {font-size: 28px; font-weight: 600;}
+.footer {background: orange;}
+
+/* MAIN PAGE */
+/* MAIN PAGE - main section */
+.main-section {position:relative;}
+.main-section .main-text-wrap {
+   width: 85%; padding: 10px; background: #fff; position: absolute; left: 50%; bottom:0%; transform: translate(-50%,-10%);}
+.lar-img img{aspect-ratio: 16 / 9;}
+
+/* MAIN PAGE - product section */
+.product-list.grid {display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px 40px;}
+.product-list .product-item__img {aspect-ratio: 16/9; margin-bottom:10px;}
+.product-list .product-item__img img {width: 100%; height: 100%;}
+.product-item__text--head {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    margin-bottom: 10px;
+}
+.product-item__text--sub {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    font-size:14px;
+}
+
+/* MAIN PAGE - story section */
+.story-list {display: flex; overflow: hidden;}
+.story-item:hover {flex:10; cursor: pointer;}
+.story-item {position: relative; flex:1; height: 500px; overflow: hidden; transition: 0.4s; background: url("/img/product/main.png") no-repeat;  background-size: cover;
+    background-position: center center;}
+    .story-item.owner {border-right: 1px solid #fff;}
+    .story-item.brand {border-left: 1px solid #fff;}
+.float-text {width:100%; height: 100%;background:rgba(0,0,0,0.9); display: flex; flex-direction: column; justify-content: center; align-items: center; color: #fff; transition: 0.4s;}    
+.story-item:hover .float-text {background:rgba(0,0,0,0.2);}
+
+.story-item .head-text {text-transform: uppercase; font-size: 45px; font-weight: 700; position: absolute; left:50%; top:50%; transform: translate(-50%,-50%); color: #fff;  transition: 0.4s;}
+.story-item .sub-text {font-size: 20px; position: absolute; left:50%; top:50%; transform: translate(-50%,-50%); color: #fff; opacity: 0; transition: 0.4s;}
+.story-item:hover .sub-text {opacity: 1;}
+.story-item:hover .head-text {left:10%; top:10%; font-size:20px;}
+/* MAIN PAGE */
+/* MAIN PAGE */
+/* MAIN PAGE */
